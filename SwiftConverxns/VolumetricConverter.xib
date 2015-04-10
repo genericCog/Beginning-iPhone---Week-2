@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VolumetricConverterViewController" customModule="SwiftConverxns" customModuleProvider="target">
+            <connections>
+                <outlet property="gallonsTextField" destination="ViC-lA-hbN" id="e0N-DI-8c6"/>
+                <outlet property="litersTextField" destination="9OT-3Q-PCt" id="D98-L0-wxP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="mzz-yh-W2R"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallons:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNy-Xg-GFH">
+                    <rect key="frame" x="8" y="115" width="63" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liters:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqD-aT-MyI">
+                    <rect key="frame" x="8" y="154" width="48" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ViC-lA-hbN">
+                    <rect key="frame" x="79" y="111" width="513" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Tgu-Nr-FHD"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9OT-3Q-PCt">
+                    <rect key="frame" x="79" y="150" width="513" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="5Ca-sv-rp6"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jNy-Xg-GFH" firstAttribute="leading" secondItem="OqD-aT-MyI" secondAttribute="leading" id="0IE-1u-WKJ"/>
+                <constraint firstItem="9OT-3Q-PCt" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="2pf-Rn-jc5"/>
+                <constraint firstItem="jNy-Xg-GFH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="IoW-Tq-3Pk"/>
+                <constraint firstItem="OqD-aT-MyI" firstAttribute="top" secondItem="jNy-Xg-GFH" secondAttribute="bottom" constant="18" id="TaL-PB-r7k"/>
+                <constraint firstItem="ViC-lA-hbN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="111" id="ZeR-u8-Y2T"/>
+                <constraint firstItem="ViC-lA-hbN" firstAttribute="leading" secondItem="jNy-Xg-GFH" secondAttribute="trailing" constant="8" symbolic="YES" id="ddC-oK-C6L"/>
+                <constraint firstItem="jNy-Xg-GFH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="115" id="eYW-SH-Kxa"/>
+                <constraint firstItem="9OT-3Q-PCt" firstAttribute="trailing" secondItem="ViC-lA-hbN" secondAttribute="trailing" id="jBe-Hg-9t5"/>
+                <constraint firstItem="9OT-3Q-PCt" firstAttribute="top" secondItem="ViC-lA-hbN" secondAttribute="bottom" constant="9" id="jX4-JH-7ew"/>
+                <constraint firstItem="ViC-lA-hbN" firstAttribute="leading" secondItem="9OT-3Q-PCt" secondAttribute="leading" id="tiG-Ev-bKy"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+        </view>
+    </objects>
+</document>
