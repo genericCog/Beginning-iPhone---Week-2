@@ -25,18 +25,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 2.f this is the Volumetric Conversion View
         let distanceConverterViewController = DistanceConverterViewController(nibName: "DistanceConverter", bundle: NSBundle.mainBundle())
         
-        // add a viewController for navigation to graph
-        let fcCurvesViewController = FCCurvesViewController(nibName: "FCCurves", bundle: NSBundle.mainBundle())
+//        // add a viewController for navigation to graph
+//        let fcCurvesViewController = FCCurvesViewController(nibName: "FCCurves", bundle: NSBundle.mainBundle())
         
         // 2.d this is Temperature tab item
         let firstNavController = UINavigationController(rootViewController:
             temperatureConverterViewController)
          firstNavController.tabBarItem.title = "Temperature"
         
-        // this is the Graph menu item
-        let fourthNavController = UINavigationController(rootViewController:
-            fcCurvesViewController)
-        fourthNavController.tabBarItem.title="Graph"
+//        // this is the Graph menu item
+//        let fourthNavController = UINavigationController(rootViewController:
+//            fcCurvesViewController)
+//        fourthNavController.tabBarItem.title="Graph"
         
         // 2.d this is Volumemetric tab item
         let secondNavController = UINavigationController(rootViewController:
@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 2.b create UITabBarController instance
         let tabBarController = UITabBarController()
         // 2.c populate the @property viewControllers of tabBarController array
-        tabBarController.viewControllers = [firstNavController, secondNavController, thirdNavController, fourthNavController]
+        tabBarController.viewControllers = [firstNavController, secondNavController, thirdNavController]
         // 2.a
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = tabBarController

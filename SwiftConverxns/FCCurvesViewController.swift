@@ -10,7 +10,24 @@
 
 import UIKit
 
-class FCCurvesViewController: UIViewController, UIScrollViewDelegate {
-   
-   }
+class FCCurvesViewController: UIViewController {
+    @IBOutlet weak var graphImageView: UIImageView!
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let imageName = "image_graph.png"
+        let image = UIImage (named: imageName)
+        let imageView = UIImageView(image: image!)
+        
+        graphImageView.addSubview(imageView)
+}
 
+}

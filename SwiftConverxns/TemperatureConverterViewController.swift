@@ -15,6 +15,12 @@ class TemperatureConverterViewController: UIViewController, UITextFieldDelegate 
     @IBOutlet weak var fahrenheitTextField: UITextField!
     @IBOutlet weak var celsiusTextField: UITextField!
     
+    //Challenge 1 & 2: call graph xib from temperature xib
+    @IBAction func btnShowGraph(sender: AnyObject) {
+        let graphViewController = FCCurvesViewController(nibName: "FCCurves", bundle: nil)
+        self.navigationController?.pushViewController(graphViewController, animated: false)
+    }
+    
     // 2.e, 2.f
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
 
