@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526FB64C1AE56AB60078DDA1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FB64A1AE56AB60078DDA1 /* MenuViewController.swift */; };
+		526FB64D1AE56AB60078DDA1 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526FB64B1AE56AB60078DDA1 /* MenuViewController.xib */; };
+		526FB64F1AE574970078DDA1 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FB64E1AE574970078DDA1 /* Favorites.swift */; };
+		526FB6511AE5763A0078DDA1 /* favoritesButton_60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 526FB6501AE5763A0078DDA1 /* favoritesButton_60x60@2x.png */; };
+		526FB6541AE57BE70078DDA1 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FB6521AE57BE70078DDA1 /* FavoritesTableViewController.swift */; };
+		526FB6551AE57BE70078DDA1 /* FavoritesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526FB6531AE57BE70078DDA1 /* FavoritesTableViewController.xib */; };
 		52A27A271AD73916003AA7CC /* DistanceConverter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A27A261AD73916003AA7CC /* DistanceConverter.xib */; };
 		52A27A291AD73FB7003AA7CC /* FCCurves.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A27A281AD73FB7003AA7CC /* FCCurves.xib */; };
 		52A27A2D1AD7460A003AA7CC /* FCCurvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A27A2C1AD7460A003AA7CC /* FCCurvesViewController.swift */; };
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		526FB64A1AE56AB60078DDA1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		526FB64B1AE56AB60078DDA1 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		526FB64E1AE574970078DDA1 /* Favorites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		526FB6501AE5763A0078DDA1 /* favoritesButton_60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favoritesButton_60x60@2x.png"; sourceTree = "<group>"; };
+		526FB6521AE57BE70078DDA1 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		526FB6531AE57BE70078DDA1 /* FavoritesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesTableViewController.xib; sourceTree = "<group>"; };
 		52A27A261AD73916003AA7CC /* DistanceConverter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DistanceConverter.xib; path = ../DistanceConverter.xib; sourceTree = "<group>"; };
 		52A27A281AD73FB7003AA7CC /* FCCurves.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCCurves.xib; sourceTree = "<group>"; };
 		52A27A2C1AD7460A003AA7CC /* FCCurvesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCCurvesViewController.swift; sourceTree = "<group>"; };
@@ -95,18 +107,23 @@
 		52F240C21AD5DE0400CD9F74 /* SwiftConverxns */ = {
 			isa = PBXGroup;
 			children = (
-				52A27A261AD73916003AA7CC /* DistanceConverter.xib */,
-				52E872AD1AD72F680074B7FB /* DistanceConverterViewController.swift */,
-				52F240E71AD5E2D900CD9F74 /* TemperatureConverter.xib */,
-				52F240E51AD5DEBD00CD9F74 /* TemperatureConverterViewController.swift */,
-				52E872AB1AD724E70074B7FB /* VolumetricConverter.xib */,
-				52E872A91AD71DC00074B7FB /* VolumetricConverterViewController.swift */,
-				52A27A281AD73FB7003AA7CC /* FCCurves.xib */,
-				52A27A2C1AD7460A003AA7CC /* FCCurvesViewController.swift */,
 				52F240C51AD5DE0400CD9F74 /* AppDelegate.swift */,
+				526FB6521AE57BE70078DDA1 /* FavoritesTableViewController.swift */,
+				526FB6531AE57BE70078DDA1 /* FavoritesTableViewController.xib */,
+				526FB64E1AE574970078DDA1 /* Favorites.swift */,
+				526FB64A1AE56AB60078DDA1 /* MenuViewController.swift */,
+				526FB64B1AE56AB60078DDA1 /* MenuViewController.xib */,
+				52F240E51AD5DEBD00CD9F74 /* TemperatureConverterViewController.swift */,
+				52F240E71AD5E2D900CD9F74 /* TemperatureConverter.xib */,
+				52E872AD1AD72F680074B7FB /* DistanceConverterViewController.swift */,
+				52A27A261AD73916003AA7CC /* DistanceConverter.xib */,
+				52E872A91AD71DC00074B7FB /* VolumetricConverterViewController.swift */,
+				52E872AB1AD724E70074B7FB /* VolumetricConverter.xib */,
 				52F240C71AD5DE0400CD9F74 /* ViewController.swift */,
 				52F240C91AD5DE0500CD9F74 /* Main.storyboard */,
 				52F240CC1AD5DE0500CD9F74 /* Images.xcassets */,
+				52A27A2C1AD7460A003AA7CC /* FCCurvesViewController.swift */,
+				52A27A281AD73FB7003AA7CC /* FCCurves.xib */,
 				52F240CE1AD5DE0500CD9F74 /* LaunchScreen.xib */,
 				52F240C31AD5DE0400CD9F74 /* Supporting Files */,
 			);
@@ -116,6 +133,7 @@
 		52F240C31AD5DE0400CD9F74 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				526FB6501AE5763A0078DDA1 /* favoritesButton_60x60@2x.png */,
 				52A27A2E1AD74940003AA7CC /* image_graph.png */,
 				52F240C41AD5DE0400CD9F74 /* Info.plist */,
 			);
@@ -219,14 +237,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526FB6551AE57BE70078DDA1 /* FavoritesTableViewController.xib in Resources */,
 				52F240CB1AD5DE0500CD9F74 /* Main.storyboard in Resources */,
 				52A27A271AD73916003AA7CC /* DistanceConverter.xib in Resources */,
 				52A27A291AD73FB7003AA7CC /* FCCurves.xib in Resources */,
 				52F240D01AD5DE0500CD9F74 /* LaunchScreen.xib in Resources */,
+				526FB64D1AE56AB60078DDA1 /* MenuViewController.xib in Resources */,
 				52F240CD1AD5DE0500CD9F74 /* Images.xcassets in Resources */,
 				52E872AC1AD724E70074B7FB /* VolumetricConverter.xib in Resources */,
 				52A27A2F1AD74940003AA7CC /* image_graph.png in Resources */,
 				52F240E81AD5E2D900CD9F74 /* TemperatureConverter.xib in Resources */,
+				526FB6511AE5763A0078DDA1 /* favoritesButton_60x60@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +268,10 @@
 				52F240E61AD5DEBD00CD9F74 /* TemperatureConverterViewController.swift in Sources */,
 				52A27A2D1AD7460A003AA7CC /* FCCurvesViewController.swift in Sources */,
 				52F240C81AD5DE0400CD9F74 /* ViewController.swift in Sources */,
+				526FB6541AE57BE70078DDA1 /* FavoritesTableViewController.swift in Sources */,
+				526FB64C1AE56AB60078DDA1 /* MenuViewController.swift in Sources */,
 				52E872AE1AD72F680074B7FB /* DistanceConverterViewController.swift in Sources */,
+				526FB64F1AE574970078DDA1 /* Favorites.swift in Sources */,
 				52F240C61AD5DE0400CD9F74 /* AppDelegate.swift in Sources */,
 				52E872AA1AD71DC00074B7FB /* VolumetricConverterViewController.swift in Sources */,
 			);
