@@ -4,5 +4,14 @@ A place to keep homework files <br/>
 Please feel free to fork/clone/improve!
 <br/>
 <p>
-<a href="https://github.com/genericCog/BeginningiPhone/tree/week-2" target=_blank">Week 2 available here</a>
+<ul>
+  <li>
+  <a href="https://github.com/genericCog/BeginningiPhone/tree/week-2" target=_blank">
+    Week 2 available here</a>
+  </li>
+  <li>
+  <a href="https://github.com/genericCog/BeginningiPhone/tree/week-3-1" target=_blank">
+    Week 3 available here</a>
+    </li>
+  </ul>
 </p>
