@@ -6,12 +6,12 @@ Please feel free to fork/clone/improve!
 <p>
 <ul>
   <li>
-  <a href="https://github.com/genericCog/BeginningiPhone/tree/week-2" target=_blank">
-    Week 2 available here</a>
+    <a href="https://github.com/genericCog/BeginningiPhone/tree/week-3-1" target=_blank">
+    Week 3 available here</a>
   </li>
   <li>
-  <a href="https://github.com/genericCog/BeginningiPhone/tree/week-3-1" target=_blank">
-    Week 3 available here</a>
+    <a href="https://github.com/genericCog/BeginningiPhone/tree/week-2" target=_blank">
+    Week 2 available here</a>
     </li>
   </ul>
 </p>
