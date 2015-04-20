@@ -2,61 +2,69 @@
 //  AppDelegate.swift
 //  SwiftConverxns
 //
-//  Created by Stacie cherochak on 4/8/15.
+//  Created by Adam cherochak on 4/8/15.
 //  Copyright (c) 2015 Adam Cherochak. All rights reserved.
+//  2015-04-15-1528 removed reference to tab bar navigation controller & Graph xib
+//  2015-04-15-1648 homework week 3 modifications page 19, 3.f
 //
 
 import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    func application(application: UIApplication, didFinishLaunchingWithOptions
-    launchOptions: [NSObject: AnyObject]?) -> Bool {
-    // Override point for customization after application launch.
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-    
+        //3.f w-3 register default values into NSUserDefaults
+        if let data: NSData = NSUserDefaults.standardUserDefaults().objectForKey("FavoriteConverstions")as? NSData{
         
-        // 2.f this is the Temperature Conversion View
+        }
+        else
+        {
+            let defaultFavorites = NSKeyedArchiver.archivedDataWithRootObject([])
+            NSUserDefaults.standardUserDefaults().registerDefaults(["FavoriteConversions" : defaultFavorites])
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+
+        // 2.f wk-2  this is the Temperature Conversion View
         let temperatureConverterViewController = TemperatureConverterViewController(nibName: "TemperatureConverter", bundle: NSBundle.mainBundle())
         
-        // 2.f this is the Volumetric Conversion View
+        // 2.f wk-2  this is the Volumetric Conversion View
         let volumetricConverterViewController = VolumetricConverterViewController(nibName: "VolumetricConverter", bundle: NSBundle.mainBundle())
         
-        // 2.f this is the Volumetric Conversion View
+        // 2.f wk-2  this is the Volumetric Conversion View
         let distanceConverterViewController = DistanceConverterViewController(nibName: "DistanceConverter", bundle: NSBundle.mainBundle())
         
-//        // add a viewController for navigation to graph
-//        let fcCurvesViewController = FCCurvesViewController(nibName: "FCCurves", bundle: NSBundle.mainBundle())
-        
-        // 2.d this is Temperature tab item
+        // 2.d wk-2  this is Temperature tab item
         let firstNavController = UINavigationController(rootViewController:
             temperatureConverterViewController)
          firstNavController.tabBarItem.title = "Temperature"
         
-//        // this is the Graph menu item
-//        let fourthNavController = UINavigationController(rootViewController:
-//            fcCurvesViewController)
-//        fourthNavController.tabBarItem.title="Graph"
-        
-        // 2.d this is Volumemetric tab item
+        // 2.d wk-2  this is Volumemetric tab item
         let secondNavController = UINavigationController(rootViewController:
             volumetricConverterViewController)
         secondNavController.tabBarItem.title = "Volume"
         
-        //2.d this is the Distance tab item
+        //2.d wk-2  this is the Distance tab item
         let thirdNavController = UINavigationController(rootViewController:
             distanceConverterViewController)
         thirdNavController.tabBarItem.title = "Distance"
         
-        // 2.b create UITabBarController instance
-        let tabBarController = UITabBarController()
-        // 2.c populate the @property viewControllers of tabBarController array
-        tabBarController.viewControllers = [firstNavController, secondNavController, thirdNavController]
-        // 2.a
+        // 2.a wk-2
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = tabBarController
-        self.window?.addSubview(tabBarController.view)
+        
+        //5.0 wk-3 add favorites to menu table view
+        let favoritesViewController = FavoritesTableViewController(nibName: "FavoritesTableViewController", bundle: NSBundle.mainBundle())
+        
+        //2.i wk-3 initialize MenuViewController with array of converter view controllers
+        //5.0 wk-3 added favoritesViewController to array
+        let menuVC = MenuViewController(viewControllers: [temperatureConverterViewController, distanceConverterViewController, volumetricConverterViewController, favoritesViewController])
+        menuVC.title = "Name"
+        //2.i 2k-3 create new navigation controller (mainNavigationController), set as rootViewController of the window, then put MenuViewController instance inside this new navigation controller
+        let mainNavigationController = UINavigationController(rootViewController: menuVC)
+        self.window?.rootViewController = mainNavigationController
+        self.window?.addSubview(mainNavigationController.view)
         self.window?.makeKeyAndVisible()
         return true
     }
+    
 }
